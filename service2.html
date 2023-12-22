@@ -1,0 +1,102 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+        color: #fff;
+    }
+
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    .logo{
+    width: 200px;
+    }   
+
+    nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    margin-right: 20px;
+    }
+
+    nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    }
+
+    nav a:hover::after{
+    width: 100%;
+    }
+
+    .container{
+        margin: 60 150px;
+    }
+
+    .services-list{
+    background: #262626;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    }
+
+    .services-list:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+    }
+
+    .Subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    }
+
+    .content{
+        font-size: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <a href="index.html">Home</a>   
+    </nav>
+    <div class="container">
+    <p class="Subtitle">Java Application</p>
+            <div class="services-list">
+                    <p class="content">
+                        Java application service is a type of service that involves developing and deploying Java-based applications on a server that supports the Java platform.
+                        Java application service can help clients to create powerful, scalable, and portable applications that can run on any platform that supports Java.
+                        Java application service can also help clients to improve their business processes, increase their productivity, and reduce their costs.
+                    </p>
+            </div>
+    </div>
+</body>
+</html>

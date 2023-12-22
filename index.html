@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!---------------------------Header--------------------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <img class="fas" src="images/icons/close.png" onclick="closemenu()">
+                </ul>
+                <img class="fas" src="images/icons/menu.png" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sahil</span><br>Thakur From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------About---------------------------> 
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Subtitle">About Me</h1>
+                    <p>Myself Sahil Thakur, I am a BBA(CA) Graduate.
+                        Front-End Development is My Strong Point.
+                        I also have good Knowledge of Java,Javascript and Python.
+                    </p>
+
+                    <div class="tabtitle">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tabcontent active-tab" id="skill">
+                        <ul>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>UI/UX</span><br>Designing Web Interface</li>
+                            <li><span>App Development</span><br>Building Java Application</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="exp">
+                        <ul>
+                            <li><span>I am Still a Fresher</span><br>So no Experience....</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontent" id="edu">
+                        <ul>
+                            <li><span>2024</span><br>BBA(CA) from Sinhgad College of Science</li>
+                            <li><span>2021</span><br>12th from Modern Junior College of Arts, Science and Commerce</li>
+                            <li><span>2019</span><br>10th from Seth Dagaduram Katariya English Medium High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------Services--------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="Subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>I can Design User Interface as per your Recommandation</p>
+                    <a href="service1.html">Learn more</a>
+                </div>
+                <div>
+                    <h2>Java Application</h2>
+                    <p>I can Build Moderate Level Java Apllication's</p>
+                    <a href="service2.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------Portfolio--------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Animix</h3>
+                        <p>The Future of OTT Platform. Enjoy Latest Movies, Web-Series and Animes here. Dive into a different World.
+                        </p>
+                        <a href="https://sahil-thakur-31.github.io/Animix/"><img src="images/icons/share.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Browser HomePage</h3>
+                        <p>Simplified HomePage for your Browser. It have all required shortcuts you need in day-to-day life.
+                        </p>
+                        <a href="https://browserhomepage.netlify.app/"><img src="images/icons/share.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="projects.html" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!---------------------------Contact--------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="cleft">
+                    <h1 class="Subtitle">Contact Me</h1>
+                    <p><img src="images/icons/email.png"> Sahilthakur3109@gmail.com</p>
+                    <p><img src="images/icons/phone.png"> +91 7030179095</p>
+                    <div class="sicon">
+                        <a href="https://www.facebook.com/profile.php?id=100021075879921"><img src="images/icons/facebook.png"></a>
+                        <a href="https://www.instagram.com/sahil_thakur74/"><img src="images/icons/instagram.png"></a>
+                        <a href="https://www.linkedin.com/in/sahil-thakur31"><img src="images/icons/linkedin.png"></a>
+                        <a href="https://twitter.com/SahilThakur31"><img src="images/icons/twitter.png"></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="cright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sahil Thakur. Made with <img src="images/icons/heart.png"> by Myself</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tabcontent");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxJcAoBdTFyeIBjG6Fve-tdXjQPLOlJ_9XEGzYWm603mM0Zv6gu7APnlK6ZRyHo9TtH/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+</html>

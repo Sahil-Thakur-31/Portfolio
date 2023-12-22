@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+        color: #fff;
+    }
+
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    .logo{
+    width: 200px;
+    }   
+
+    nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    margin-right: 20px;
+    }
+
+    nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    }
+
+    nav a:hover::after{
+    width: 100%;
+    }
+
+    .container{
+        margin: 60 150px;
+    }
+
+    .services-list{
+    background: #262626;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    }
+
+    .services-list:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+    }
+
+    .Subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    }
+
+    .content{
+        font-size: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <a href="index.html">Home</a>   
+    </nav>
+    <div class="container">
+    <p class="Subtitle">UI/UX Design</p>
+            <div class="services-list">
+                    <p class="content">
+                        UI/UX service is a type of service that involves designing and developing digital products that are user-friendly, attractive, and effective.
+                        UI stands for user interface, which is the visual part of a product that a user interacts with, such as buttons, menus, icons, etc.
+                        UX stands for user experience, which is the overall feeling and satisfaction that a user has when using a product, such as ease of use, functionality, speed, etc.
+                        UI/UX service can help clients to create digital products that are engaging, informative, and conversion-driven, and that meet the expectations and needs of the users.
+                        UI/UX service can also help clients to improve their brand identity, online presence, and customer loyalty.
+                    </p>
+            </div>
+    </div>
+</body>
+</html>

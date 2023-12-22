@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+
+        body{
+            background: black;
+            color: white;
+        }
+
+        .txt{
+            padding: 50px;
+            text-align: center;
+            color: #ff004f;
+            font-weight: 600;
+            font-family: cursive;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo{
+            width: 200px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 24px
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+
+        .Subtitle{
+            font-size: 60px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .work-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work img{
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .layer{
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 14px;
+            transition: height 0.5s;
+        }
+
+        .layer h3{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .layer a{
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 60px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .layer a img{
+            height: 25px;
+            width: auto;
+            margin: 18px;
+        }
+
+        .work:hover img{
+            transform: scale(1.1);
+        }
+
+        .work:hover .layer{
+            height: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="Index.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Animix</h3>
+                        <p>The Future of OTT Platform. Enjoy Latest Movies, Web-Series and Animes here. Dive into a different World.
+                        </p>
+                        <a href="https://sahil-thakur-31.github.io/Animix/"><img src="images/icons/share.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Browser HomePage</h3>
+                        <p>Simplified HomePage for your Browser. It have all required shortcuts you need in day-to-day life.
+                        </p>
+                        <a href="https://browserhomepage.netlify.app/"><img src="images/icons/share.png"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Socialbook</h3>
+                        <p>The Future of Social Media Platform. Enjoy with friends by sharing your Thoughts no matter how far you are from each other.
+                        </p>
+                        <a href="https://sahil-thakur-31.github.io/Socialbook/"><img src="images/icons/share.png"></a>
+                    </div>
+                </div>
+                
+            </div>
+            <h3 class="txt">That's All for Now ! More Projects will be added in Future.</h3>
+        </div>
+    </div>
+</body>
+</html>
